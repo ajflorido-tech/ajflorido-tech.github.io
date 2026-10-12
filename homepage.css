@@ -39,3 +39,10 @@ body.home-v3{background:#070b17;color:#fff;margin:0;overflow-x:hidden}
 .home-v3 .home-cards{grid-template-columns:1fr}
 }
 @media(max-width:420px){.home-v3 .mobile-top nav{gap:10px}.home-v3 .mobile-top nav a{font-size:12px}.home-v3 .mobile-content h1{font-size:clamp(60px,17vw,80px)}}
+
+/* Fourth navigation item: add a real link without altering the approved desktop artwork. */
+.home-v3 .desktop-resources-link{position:absolute;left:62%;top:2.5%;z-index:3;color:#e5e8f2;font-size:clamp(11px,1.05vw,16px);line-height:1.4;text-decoration:none;padding:6px 9px;border-radius:10px;background:#080d1bd9}
+.home-v3 .desktop-resources-link:hover,.home-v3 .desktop-resources-link:focus-visible{color:#d7b8ff;outline:2px solid #8e6df2}
+.home-v3 .resources-home-link{display:block;margin:22px 0 0;color:#b7a7ff;font-weight:700}
+@media(max-width:850px){.home-v3 .desktop-resources-link{display:none}.home-v3 .mobile-top{flex-wrap:wrap}.home-v3 .mobile-top nav{flex-wrap:wrap;justify-content:flex-end}}
+@media(max-width:420px){.home-v3 .mobile-top nav{gap:9px}.home-v3 .mobile-top nav a{font-size:11px}}
