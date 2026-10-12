@@ -1,0 +1,41 @@
+/* Homepage-only layout. The other two pages continue using style.css. */
+body.home-v3{background:#070b17;color:#fff;margin:0;overflow-x:hidden}
+.home-v3 .artwork-hero{width:100%;position:relative;line-height:0;isolation:isolate;background:#070b17}
+.home-v3 .artwork{display:block;width:100%;height:auto}
+.home-v3 .hotspot{display:block;position:absolute;z-index:2;border-radius:16px;cursor:pointer}
+.home-v3 .hotspot:focus-visible{outline:3px solid #d6b3ff;outline-offset:2px;background:#ffffff18}
+.home-v3 .logo{left:4.5%;top:1%;width:5%;height:7%}
+.home-v3 .nav-home{left:40%;top:1%;width:6%;height:7%}
+.home-v3 .nav-games{left:47%;top:1%;width:6%;height:7%}
+.home-v3 .nav-projects{left:54%;top:1%;width:8%;height:7%}
+.home-v3 .nav-contact{left:84%;top:1%;width:13%;height:7%}
+.home-v3 .action-games{left:5%;top:73%;width:20%;height:9%}
+.home-v3 .action-projects{left:26%;top:73%;width:20%;height:9%}
+.home-v3 .social-github{left:5%;top:85%;width:4%;height:9%}
+.home-v3 .mobile-home{display:none}
+.home-v3 .below-hero{padding:65px max(5%,24px) 95px;max-width:1250px;margin:auto}
+.home-v3 .below-hero h2{font-size:clamp(32px,4vw,54px);margin:12px 0 30px;letter-spacing:-.045em}
+.home-v3 .home-cards{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:22px}
+.home-v3 .home-cards a{border:1px solid #ffffff25;background:#11172b;padding:30px;border-radius:20px;display:flex;flex-direction:column;gap:14px;transition:transform .2s,border-color .2s}
+.home-v3 .home-cards a:hover{transform:translateY(-3px);border-color:#7973e9}
+.home-v3 .home-cards strong{font-size:23px}.home-v3 .home-cards span{color:#bfc6d8}.home-v3 .home-cards b{color:#a5a0ff;font-size:14px}
+.home-v3 .home-footer{text-align:center;color:#aeb8cf;border-top:1px solid #ffffff16;padding:30px 16px;font-size:14px}
+.home-v3 .home-footer a{text-decoration:underline;text-underline-offset:4px}
+@media(max-width:850px){
+.home-v3 .artwork-hero{display:none}.home-v3 .mobile-home{display:block}
+.home-v3 .mobile-top{height:auto;min-height:76px;display:flex;align-items:center;justify-content:space-between;gap:14px;padding:18px 5%;border-bottom:1px solid #ffffff20}
+.home-v3 .mobile-brand{font-size:32px;font-weight:900;letter-spacing:-2px}.home-v3 .mobile-brand span{color:#b85aff}
+.home-v3 .mobile-top nav{display:flex;gap:16px}.home-v3 .mobile-top nav a{font-size:14px;color:#cbd0e1}
+.home-v3 .mobile-top nav a[aria-current]{color:#fff;border-bottom:2px solid #9b62ff;padding-bottom:4px}
+.home-v3 .mobile-content{padding:45px 6% 60px;max-width:680px;margin:auto}
+.home-v3 .mobile-eyebrow{font-size:14px;letter-spacing:.26em;color:#b28aff;font-weight:800;margin:0 0 18px}
+.home-v3 .mobile-content h1{font-size:clamp(70px,17vw,128px);letter-spacing:-.08em;line-height:.85;margin:0 0 32px;font-weight:900}
+.home-v3 .mobile-subtitle{font-size:clamp(18px,4vw,24px);line-height:1.4;color:white}
+.home-v3 .mobile-description{color:#bbc2d5;line-height:1.7;font-size:16px;max-width:550px}
+.home-v3 .mobile-buttons{display:flex;flex-wrap:wrap;gap:12px;margin-top:25px}
+.home-v3 .mobile-buttons a{padding:15px 20px;border-radius:100px;font-weight:700;font-size:14px;border:1px solid #7776db}
+.home-v3 .mobile-primary{background:linear-gradient(105deg,#b63ded,#3479ff);border:0!important}
+.home-v3 .mobile-portrait{display:block;width:min(100%,450px);max-height:440px;object-fit:cover;object-position:top center;border-radius:24px;margin:40px auto 0;box-shadow:0 20px 65px #161e58a0}
+.home-v3 .home-cards{grid-template-columns:1fr}
+}
+@media(max-width:420px){.home-v3 .mobile-top nav{gap:10px}.home-v3 .mobile-top nav a{font-size:12px}.home-v3 .mobile-content h1{font-size:clamp(60px,17vw,80px)}}
